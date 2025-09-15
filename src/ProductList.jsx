@@ -3,6 +3,10 @@ import { useDispatch } from 'react-redux';
 import { addItem } from '../path/to/CartSlice'; // ✅ Replace with actual path to CartSlice
 import './ProductList.css';
 import CartItem from './CartItem';
+import { addItem } from '../path/to/CartSlice';
+dispatch(addItem(plant));
+
+
 
 function ProductList({ onHomeClick }) {
     const dispatch = useDispatch();
