@@ -49,25 +49,25 @@ function ProductList({ onHomeClick }) {
           name: "Snake Plant",
           description: "Produces oxygen at night, improving air quality.",
           cost: "$15",
-          image: "https://www.freepik.com/free-psd/palm-tree-pot-isolated_373259448.htm#fromView=search&page=1&position=0&uuid=037d950b-e183-497c-95f0-4195e1458614&query=+plant"
+          image: "https://cdn.pixabay.com/photo/2021/01/22/06/04/snake-plant-5939187_1280.jpg"
         },
         {
           name: "Spider Plant",
           description: "Filters formaldehyde and xylene from the air.",
           cost: "$12",
-          image: "https://www.freepik.com/free-vector/venus-flytrap-carnivorous-plant-insect_25591553.htm#fromView=search&page=1&position=1&uuid=86d320be-8eba-4f17-a2a5-b80533a2239f&query=spider+plant"
+          image: "https://cdn.pixabay.com/photo/2018/07/11/06/47/chlorophytum-3530413_1280.jpg"
         },
         {
           name: "Peace Lily",
           description: "Removes mold spores and purifies the air.",
           cost: "$18",
-          image: "https://www.freepik.com/free-photo/beautiful-blooming-white-flowers-spathiphyllum_3170692.htm#fromView=search&page=1&position=1&uuid=c678a376-18d9-47cf-aefc-d94db4b62493&query=peace+lilly"
+          image: "https://pixabay.com/vectors/botanical-potted-plant-botanic-8959535/"
         }
       ]
     }
     // Add more categories if needed
   ];
-git
+
   const styleObj = {
     backgroundColor: '#4CAF50',
     color: '#fff',
