@@ -15,8 +15,8 @@ export const CartSlice = createSlice({
         // If already in cart, increase quantity
         existingItem.quantity += 1;
       } else {
-        // Else, add with quantity 1
-        state.items.push({ ...plant, quantity: 1 });
+        // Add new item with quantity from payload (or default to 1)
+        state.items.push({ ...plant, quantity: plant.quantity || 1 });
       }
     },
 
@@ -32,7 +32,12 @@ export const CartSlice = createSlice({
       const itemToUpdate = state.items.find(item => item.name === name);
 
       if (itemToUpdate) {
-        itemToUpdate.quantity = amount;
+        // Prevent quantity from being set to less than 1
+        if (amount < 1) {
+          state.items = state.items.filter(item => item.name !== name);
+        } else {
+          itemToUpdate.quantity = amount;
+        }
       }
     },
   },
