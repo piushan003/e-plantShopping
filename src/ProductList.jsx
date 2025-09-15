@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addItem } from '../redux/CartSlice'; // ✅ Make sure this path is correct
+import { addItem } from './CartSlice'; // ✅ Make sure this path is correct
 import './ProductList.css';
 import CartItem from './CartItem';
 
@@ -49,25 +49,25 @@ function ProductList({ onHomeClick }) {
           name: "Snake Plant",
           description: "Produces oxygen at night, improving air quality.",
           cost: "$15",
-          image: "https://cdn.shopify.com/s/files/1/0150/6262/products/4_823baa27-b671-42a1-b640-d66dc45fc2b6_480x480.jpg"
+          image: "https://www.freepik.com/free-psd/palm-tree-pot-isolated_373259448.htm#fromView=search&page=1&position=0&uuid=037d950b-e183-497c-95f0-4195e1458614&query=+plant"
         },
         {
           name: "Spider Plant",
           description: "Filters formaldehyde and xylene from the air.",
           cost: "$12",
-          image: "https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/29609/278818/Spider-Plant-2__35590.1634853331.jpg"
+          image: "https://www.freepik.com/free-vector/venus-flytrap-carnivorous-plant-insect_25591553.htm#fromView=search&page=1&position=1&uuid=86d320be-8eba-4f17-a2a5-b80533a2239f&query=spider+plant"
         },
         {
           name: "Peace Lily",
           description: "Removes mold spores and purifies the air.",
           cost: "$18",
-          image: "https://www.gardeningknowhow.com/wp-content/uploads/2022/04/peace-lily.jpg"
+          image: "https://www.freepik.com/free-photo/beautiful-blooming-white-flowers-spathiphyllum_3170692.htm#fromView=search&page=1&position=1&uuid=c678a376-18d9-47cf-aefc-d94db4b62493&query=peace+lilly"
         }
       ]
     }
     // Add more categories if needed
   ];
-
+git
   const styleObj = {
     backgroundColor: '#4CAF50',
     color: '#fff',
